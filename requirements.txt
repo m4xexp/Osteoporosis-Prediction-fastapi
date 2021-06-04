@@ -1,4 +1,4 @@
-fastapi
+fastapi>=0.63.0,<0.64.0
 uvicorn
 pandas
 scikit-learn
