@@ -1,5 +1,5 @@
-FastAPI
+fastapi
 uvicorn
-pickle
 pandas
-sklearn
+scikit-learn
+numpy
