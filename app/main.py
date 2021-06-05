@@ -1,9 +1,7 @@
 from fastapi.middleware.cors import CORSMiddleware
-from fastapi import FastAPI, File, UploadFile, Form
-from fastapi.responses import HTMLResponse
+from fastapi import FastAPI, Form
 import pandas as pd
 import pickle
-import uvicorn
 
 app = FastAPI()
 
@@ -24,11 +22,6 @@ async def index():
     return "Welcome to Diagnos API "
 
 
-@app.get('/test/{name}')
-async def test(name):
-    return {'Name': {name}}
-
- 
 @app.post("/predict/ost/")
 async def predict_walking(Age: int = Form(...),
              Gender: int = Form(...), Drink: int = Form(...), 
