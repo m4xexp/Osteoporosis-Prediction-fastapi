@@ -1,7 +1,7 @@
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi import FastAPI, Form
 import pandas as pd
-import pickle
+import pickle5 as pickle
 
 app = FastAPI()
 
